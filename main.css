@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif ;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+header{
+    background-color: rgb(66, 127, 218);
+    color: aliceblue;
+    border-bottom: solid 2px #ff0000;
+    margin-bottom: 24px;
+}
+
+header .container ul{
+    list-style: none;
+    display: flex;
+}
+
+header .container li a{
+    margin-left: 24px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sobre-loja h2{
+    color: rgb(66, 127, 218);
+    margin-left: 16px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px red;
+}
+
+.sobre-loja{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.sobre-loja p{
+    color: rgb(0, 0, 0);
+    margin-left: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.sobre-loja img{
+    max-width: 100%;
+}
+
+.titulo-produtos{
+    color: rgb(66, 127, 218);
+    border-bottom: solid 2px red;
+    padding-bottom: 16px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.produtos button{
+    padding: 16px;
+    border-radius: 25px;
+    width: 100%;
+    border: none;
+    background-color: rgb(66, 127, 218);
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.tenis a h3{
+    color: black;
+}
+
+@media screen and (max-width: 767px){
+    .sobre-loja h2{
+        color: rgb(66, 127, 218);
+        margin-left: 0px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px red;
+    }
+    
+
+    .sobre-loja{
+        display: block;
+    }
+
+    .sobre-loja p{
+        color: rgb(0, 0, 0);
+        margin-left: 16px;
+        font-weight: 600;
+        margin-top: 16px;
+    }
+    
+    .sobre-loja img{
+        max-width: 100%;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    
+    .produtos button{
+        padding: 16px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(66, 127, 218);
+        color: white;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+    .tenis a img{
+        max-width: 100%;
+    }
+    
+    .tenis a h3{
+        color: black;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+    }
+    
+    .produtos button{
+        padding: 16px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(66, 127, 218);
+        color: white;
+        font-weight: bold;
+        margin-top: 12px;
+        font-size: 23px;
+    }
+
+    .tenis a img{
+        max-width: 100%;
+    }
+    
+    .tenis a h3{
+        color: black;
+        font-size: 23px;
+    }
+
+    .sobre-loja img{
+        max-width: 400px;
+    }
+
+    .sobre-loja aside p{
+        font-size: 23px;
+    }
+
+    header li{
+        font-size: 23px;
+    }
+
+    header h1{
+        font-size: 48px;
+    }
+
+    .sobre-loja h2{
+        color: rgb(66, 127, 218);
+        margin-left: 0px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px red;
+        font-size: 32px;
+    }
+
+    .titulo-produtos{
+        font-size: 32px;
+    }
+}
+
+
+
+
